@@ -7,6 +7,7 @@ import me.dio.academia.digital.repository.AlunoRepository;
 import me.dio.academia.digital.repository.MatriculaRepository;
 import me.dio.academia.digital.service.IMatriculaService;
 
+
 import java.util.List;
 
 import org.springframework.stereotype.Service;
@@ -32,7 +33,9 @@ public class MatriculaServiceImpl implements IMatriculaService {
 
     @Override
     public Matricula get(Long id) {
-        return matriculaRepository.findByIdMatricula(id).get();
+        //return matriculaRepository.findByIdMatricula(id).get();
+        //return matriculaRepository.findById(id);
+        return null;
     }
 
     @Override
@@ -41,7 +44,8 @@ public class MatriculaServiceImpl implements IMatriculaService {
         if (bairro == null) {
             return matriculaRepository.findAll();
         } else {
-            return matriculaRepository.findAlunosMatriculadosBairro(bairro);
+            //return matriculaRepository.findAlunosMatriculadosBairro(bairro);
+            return null;
         }
 
     }
