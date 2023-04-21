@@ -1,4 +1,4 @@
-<h1>Projeto API de uma academia de ginástica usando Spring Data JPA </h1>
+<h1>Projeto API de uma academia usando Spring Data JPA </h1>
 <p> Projeto implementado para o desafio "Conhecendo Spring Data JPA na prática com Java" da (<a href="https://dio.me/"><strong>DIO</strong></a>).<br>
 
 <h2>🎯 Objetivo do Projeto</h2>
