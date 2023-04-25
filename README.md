@@ -35,7 +35,7 @@
 <h3>/alunos/avaliacoes/{id}</h3>
 <ul><li>via GET: lista todas as avaliações do aluno com a id {id}</li></ul>
 <h3>/alunos?dataDeNascimento=dd/mm/yyyy</h3>
-<ul><li>via GET: lista todos os alunos com data de nascimento dd/mm/yyyy</li></ul>
+<ul><li>via GET: lista todos os alunos nascidos em dd/mm/yyyy</li></ul>
 
 <h3>/avaliacoes</h3>
 <ul>
@@ -49,42 +49,25 @@
 <li>via DELETE: deleta a avaliação com id {id}</li>
 </ul>
 <h3>/matriculas/</h3>
+<ul>
+<li>via GET: retorna todas as matrículas</li>
+<li>via POST: cadastra uma matrícula</li>
+</ul>
+<h3>/matriculas?bairro=nome</h3>
+<ul>
+<li>via GET: retorna todas as matrículas do bairro nome</li>
+</ul>
 
 
-<h2><a href="https://strn.com.br/artigos/2018/12/11/todas-as-anota%C3%A7%C3%B5es-do-jpa-anota%C3%A7%C3%B5es-de-mapeamento/"> Anotações de Mapeamento </a></h2>
 
-<strong>@Entity</strong>
-Usada para especificar que a classe anotada atualmente representa um tipo de entidade.
+<h3>/matriculas/{id}</h3>
+<ul>
+<li>via GET: retorna a matrícula com id {id}</li>
+<li>via DELETE: deleta a matrícula com id {id}</li>
+</ul>
+</ul>
 
-<strong>@Table</strong>
-Usada para especificar a tabela principal da entidade atualmente anotada.
 
-<strong>@Id</strong>
-Especifica o identificador da entidade. Uma entidade deve sempre ter um atributo identificado.
-
-<strong>@GeneratedValue</strong>
-Especifica que o valor do identificador de entidade é gerado automaticamente.
-
-<strong>@Column</strong>
-Usada para especificar o mapeamento entre um atributo de entidade básico e a coluna da tabela de banco de dados.
-
-<strong>@JoinColumn</strong>
-Usada para especificar a coluna FOREIGN KEY. Indica que a entidade é a responsável pelo relacionamento.
-
-<strong>@OneToMany</strong>
-Usada para especificar um relacionamento de banco de dados um-para-muitos.
-
-<strong>@OneToOne</strong>
-Usada para especificar um relacionamento de banco de dados um-para-um.
-
-<strong>@ManyToOne</strong>
-Usada para especificar um relacionamento de banco de dados muitos-para-um.
-
-<strong>cascade</strong>
-Realizar operações em cascata só faz sentido em relacionamentos Pai - Filho.
-
-<strong>mappedBy</strong>
-Indica qual é o lado inverso ou não dominante da relação.
 
 ---
 Código base e orientações iniciais por [cami-la](https://www.linkedin.com/in/cami-la/ "cami-la"). Modificações e implementação de outras funcionalidades feitas por Mia Bueno.
