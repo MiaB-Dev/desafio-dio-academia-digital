@@ -20,6 +20,36 @@
     <li>Postman</li>
 </ul>
 
+<h2>Rotas</h2>
+<h3>/alunos</h3>
+<ul>
+<li>via GET: lista todos os alunos cadastrados</li>
+<li>via POST: cadastra um aluno </li>
+</ul>
+<h3>/alunos/{id}</h3>
+<ul>
+<li>via GET: lista o aluno com id {id}</li>
+<li>via PUT: atualiza os dados do aluno com id {id}</li>
+<li>via DELETE: deleta o aluno com id {id}</li>
+</ul>
+<h3>/alunos/avaliacoes/{id}</h3>
+<ul><li>via GET: lista todas as avaliações do aluno com a id {id}</li></ul>
+<h3>/alunos?dataDeNascimento=dd/mm/yyyy</h3>
+<ul><li>via GET: lista todos os alunos com data de nascimento dd/mm/yyyy</li></ul>
+
+<h3>/avaliacoes</h3>
+<ul>
+<li>via GET: lista todos as avaliações cadastradas</li>
+<li>via POST: cadastra uma avaliacao de um aluno</li>
+</ul>
+<h3>/avaliacoes/{id}</h3>
+<ul>
+<li>via GET: retorna a avaliação com id {id}</li>
+<li>via PUT: atualiza a avaliação com id {id}</li>
+<li>via DELETE: deleta a avaliação com id {id}</li>
+</ul>
+<h3>/matriculas/</h3>
+
 
 <h2><a href="https://strn.com.br/artigos/2018/12/11/todas-as-anota%C3%A7%C3%B5es-do-jpa-anota%C3%A7%C3%B5es-de-mapeamento/"> Anotações de Mapeamento </a></h2>
 
@@ -57,7 +87,7 @@ Realizar operações em cascata só faz sentido em relacionamentos Pai - Filho.
 Indica qual é o lado inverso ou não dominante da relação.
 
 ---
-Código base e orientações iniciais por [cami-la](https://www.linkedin.com/in/cami-la/ "cami-la"). Modificações e implementação de outras funcionalidades foram feitas por Mia Bueno.
+Código base e orientações iniciais por [cami-la](https://www.linkedin.com/in/cami-la/ "cami-la"). Modificações e implementação de outras funcionalidades feitas por Mia Bueno.
 
 
 
